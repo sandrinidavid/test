@@ -1,0 +1,80 @@
+:root{
+    box-sizing: border-box;
+}
+*, ::after, ::before{
+    box-sizing: inherit;
+}
+body * + * {
+    margin-top: 0em;
+}
+head{
+    background-color: blue;
+}
+body{
+    margin: unset;
+    border: unset;
+    padding: unset;
+    background-color:red ;
+    font-family: Algerian;
+}
+header {
+    margin: unset;
+    border: unset;
+    text-align: center;
+    background-color: #aa11ee;
+    padding: 2.5em 5em;
+
+}
+
+main{
+    margin: unset;
+    border: unset;
+    padding: 0 1.5em 1.5em 1.5em;
+    background-color: cyan;
+}
+footer{
+    text-align: center;
+    background-color: cyan;
+    font-size: 20px;
+    border-radius: 0.5em;
+}
+header,
+main,
+footer,
+article{
+
+    border-radius: .5em;
+}
+/*layout*/
+
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+article{
+    float: left;
+    width: 40%;
+    background-color: yellow;
+    margin: .5em;
+    padding: .5em;
+    border-style: double;
+    border-color: red;
+
+}
+main section div article{
+    width: calc(50%-(1.5em / 2));
+}
+
+/*clearfix*/
+section::after{
+    display: block;
+    content: "fine";
+    clear: both;
+}
+
+section div article img{
+    float: left;
+}
+section div article p {
+    overflow: auto;
+}
